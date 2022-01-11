@@ -1,9 +1,12 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link :to="{name: 'Cadastro', params: {dado: 'testRoute'}}">Cadastro</router-link>
   </div>
+  <h1>Conteúdo da rota</h1>
   <router-view/>
+  <h1>Fim Conteúdo da rota</h1>
 </template>
 
 <style>
